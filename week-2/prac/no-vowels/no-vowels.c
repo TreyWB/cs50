@@ -8,5 +8,10 @@
 
 int main(int argc, string argv[])
 {
+    if (argc != 1)
+    {
+        printf("Usage: ./no-vowels word\n");
+        return 1;
+    }
     
 }
