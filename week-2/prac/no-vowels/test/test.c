@@ -33,17 +33,17 @@ string replace(string input)
 
         switch (output[i])
         {
-            case a:
-            output[i] = '6'
+            case 'a':
+            output[i] = '6';
             break;
-            case e:
-            output[i] = '3'
+            case 'e':
+            output[i] = '3';
             break;
-            case i:
-            output[i] = '1'
+            case 'i':
+            output[i] = '1';
             break;
-            case o:
-            output[i] = '0'
+            case 'o':
+            output[i] = '0';
             break;
         }
 
