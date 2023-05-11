@@ -63,6 +63,6 @@ string replace(string input)
     }
 
     // return replace; or return replaced;
-    return 0;
+    return output;
 
 }
