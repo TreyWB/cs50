@@ -18,7 +18,7 @@ int main(void)
     for (int i = 0; i < len; i++)
     {
         digit[i] = 0;
-        digit[i] = (int) cc_num[i];
+        digit[i] = (cc_num[i] - 48);
         printf("Digit: %i\n", digit[i]);
 
     }
