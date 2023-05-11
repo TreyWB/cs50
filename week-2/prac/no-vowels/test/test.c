@@ -5,6 +5,8 @@
 
 #include <cs50.h>
 #include <stdio.h>
+#include <string.h>
+#include <ctype.h>
 
 string replace(string input);
 
@@ -33,10 +35,9 @@ string replace(string input)
     for (int i = 0; i < len; i++)
     {
         // Replace uppercase letters with lowercase
-        if (isupper(argv[1] == 'A'))
-        {
-            argv[i] = 'A' + 32;
-            return 0;
+        char c = tolower(input[i]);
+        printf("Lower: %c\n", c);
 
-    return 0;
+    }
+return 0;
 }
