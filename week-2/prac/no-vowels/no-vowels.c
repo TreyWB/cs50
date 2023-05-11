@@ -26,7 +26,7 @@ int main(int argc, string argv[])
 string replace(string input)
 {
     int len;
-    len = strlen(argv[1]);
+    len = strlen(input);
 
     string replaced;
 
