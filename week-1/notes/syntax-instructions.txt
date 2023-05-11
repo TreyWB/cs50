@@ -12,6 +12,8 @@ Main Function [no arguments]:
 
     }
 
+
+
 Main Function [with string argument]:
     int main (int argc, string argv[])
     {
@@ -24,6 +26,32 @@ int auxilary_function(string input)
 {
 
 }
+
+
+
+Main Function with Auxilary []:
+// Prototype
+string replace(string input);
+
+int main(int argc, string argv[])
+{
+
+    ...
+
+    // Export argv[1] to string because easier to pass through functions (I'm stupid)
+    string input = argv[1];
+
+    printf("Replaced: %s\n", replace(input));
+}
+
+string replace(string input)
+{
+
+    ...
+
+    return output;
+}
+
 ----------------------------------------------------------
 LOOPS
 
