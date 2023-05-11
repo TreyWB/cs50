@@ -8,16 +8,17 @@ int main(void)
     // printf("Output: %s\n", cc_num);
 
     // Getting cc_num length
-    int cc_num_length = strlen(cc_num);
-    printf("Length: %i\n", cc_num_length);
+    int len = strlen(cc_num);
+    printf("Length: %i\n", len);
 
     // Defining cc_num array, automatically defines length of array based on cc_num_length
-    int digit[cc_num_length];
+    int digit[len];
 
     // Saving each digit in cc_num seperately, into the digit[] array
-    for (int i = 0; i < cc_num_length; i++)
+    for (int i = 0; i < len; i++)
     {
         digit[i] = cc_num[i];
+        printf("Digit: %i\n", digit[i]);
 
     }
 }
