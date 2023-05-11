@@ -19,7 +19,7 @@ int main(int argc, string argv[])
     printf("%s\n", replace(argv[1]));
 }
 
-string replace(string argv[])
+string replace(string argv[1])
 {
     int len;
     len = argv[1];
