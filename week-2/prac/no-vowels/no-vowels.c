@@ -34,7 +34,7 @@ string replace(string input)
     for (int i = 0; i < len; i++)
     {
         // Replace uppercase letters with lowercase
-        output[i] = tolower(input[i]);
+        // output[i] = tolower(input[i]);
 
         switch (output[i])
         {
@@ -48,6 +48,18 @@ string replace(string input)
             output[i] = '1';
             break;
             case 'o':
+            output[i] = '0';
+            break;
+            case 'A':
+            output[i] = '6';
+            break;
+            case 'E':
+            output[i] = '3';
+            break;
+            case 'I':
+            output[i] = '1';
+            break;
+            case 'O':
             output[i] = '0';
             break;
         }
