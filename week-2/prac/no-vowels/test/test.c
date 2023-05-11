@@ -15,9 +15,9 @@ int main(int argc, string argv[])
         printf("Missing command-line argument\n");
         return 1;
     }
-    // printf("%s\n", replace(argv));
-    // printf("Argv: %s\n", replace(argv[1]));
-    // return 0;
+    printf("%s\n", replace(argv));
+    printf("Argv: %s\n", replace(argv[1]));
+    return 0;
 }
 
 string replace(string input)
