@@ -31,7 +31,7 @@ string replace(string input)
     string output;
     output = input;
 
-    for (int i = 0; i < (len - 1); i++)
+    for (int i = 0; i < (len); i++)
     {
         // Replace uppercase letters with lowercase
         output[i] = tolower(input[i]);
