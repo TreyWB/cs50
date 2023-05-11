@@ -36,21 +36,20 @@ string replace(string input)
         // Replace uppercase letters with lowercase
         output[i] = tolower(input[i]);
 
-        if (input[i] == 'a')
+        switch (output[i])
         {
+            case 'a':
             output[i] = '6';
-        }
-        else if (input[i] == 'e')
-        {
+            break;
+            case 'e':
             output[i] = '3';
-        }
-        else if (input[i] == 'i')
-        {
+            break;
+            case 'i':
             output[i] = '1';
-        }
-        else if (input[i] == 'o')
-        {
+            break;
+            case 'o':
             output[i] = '0';
+            break;
         }
     }
 
