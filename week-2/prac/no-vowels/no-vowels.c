@@ -28,7 +28,8 @@ string replace(string input)
     int len;
     len = strlen(input);
 
-    string replaced;
+    string output;
+    output = input;
 
     // for (int i = 0; i < len; i++)
     // {
