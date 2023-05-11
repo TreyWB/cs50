@@ -20,7 +20,7 @@ int main(int argc, string argv[])
 
     string input = argv[1];
 
-    printf("Replaced: %s\n", replace(input));
+    printf("Replaced: %s\n", replace(output));
 }
 
 string replace(string input)
@@ -31,7 +31,7 @@ string replace(string input)
     string output;
     output = input;
 
-    for (int i = 0; i < len; i++)
+    for (int i = 0; i < (len; i++)
     {
         // Replace uppercase letters with lowercase
         output[i] = tolower(input[i]);
