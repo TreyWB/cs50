@@ -6,7 +6,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
-string replace(string argv[]);
+string replace(char argv[]);
 
 int main(int argc, string argv[])
 {
