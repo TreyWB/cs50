@@ -145,3 +145,28 @@ Exit if commandline argument is not provided:
         printf("hello %s\n", argv[1]);
         return 0;
     }
+---------------------------------------------------
+SWITCHES
+
+Replace character in array:
+    for (int i = 0; i < (len); i++)
+    {
+        // Replace uppercase letters with lowercase
+        output[i] = tolower(input[i]);
+
+        switch (output[i])
+        {
+            case 'a':
+            output[i] = '6';
+            break;
+            case 'e':
+            output[i] = '3';
+            break;
+            case 'i':
+            output[i] = '1';
+            break;
+            case 'o':
+            output[i] = '0';
+            break;
+        }
+    }
