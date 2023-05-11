@@ -6,7 +6,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
-string replace(string argv[1]);
+string replace(string argv[]);
 
 int main(int argc, string argv[])
 {
@@ -16,10 +16,10 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    printf("%s\n", replace(argv[1]));
+    printf("%s\n", replace(argv[]));
 }
 
-string replace(string argv[1])
+string replace(string argv[])
 {
     int len;
     len = argv[1];
