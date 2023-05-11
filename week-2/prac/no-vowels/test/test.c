@@ -10,8 +10,14 @@ string replace(string argv[]);
 
 int main(int argc, string argv[])
 {
+    if (argc != 2)
+    {
+        printf("Missing command-line argument\n");
+        return 1;
+    }
     // printf("%s\n", replace(argv));
     printf("Argv: %s\n", argv[1]);
+    return 0;
 }
 
 string replace(string argv[])

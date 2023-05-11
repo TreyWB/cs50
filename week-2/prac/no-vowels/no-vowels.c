@@ -12,13 +12,13 @@ string replace(string argv[]);
 
 int main(int argc, string argv[])
 {
-    if (argc != 1)
+    if (argc != 2)
     {
         printf("Usage: ./no-vowels word\n");
         return 1;
     }
 
-    printf("%s\n", replace(argv));
+    printf("Replaced: %s\n", replace(argv[1]));
 }
 
 string replace(string argv[])
