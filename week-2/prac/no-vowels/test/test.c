@@ -10,7 +10,8 @@ string replace(string argv[]);
 
 int main(int argc, string argv[])
 {
-    printf("%s\n", replace(argv));
+    // printf("%s\n", replace(argv));
+    printf("Argv: %s\n", argv[1]);
 }
 
 string replace(string argv[])
