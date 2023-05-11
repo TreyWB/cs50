@@ -17,6 +17,7 @@ int main(void)
     // Saving each digit in cc_num seperately, into the digit[] array
     for (int i = 0; i < len; i++)
     {
+        digit[i] = 0;
         digit[i] = cc_num[i];
         printf("Digit: %i\n", digit[i]);
 
