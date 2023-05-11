@@ -1,0 +1,147 @@
+Sample Syntax - INTRO TO C
+
+Header Files:
+#include <stdio.h>
+
+Prototypes:
+int auxilary_function(string input);
+
+Main Function [no arguments]:
+    int main (void)
+    {
+
+    }
+
+Main Function [with string argument]:
+    int main (int argc, string argv[])
+    {
+
+    }
+    // int argc stores how many words were input as argument
+    // string argv (is a vector) stores words typed as argument in an array
+
+int auxilary_function(string input)
+{
+
+}
+----------------------------------------------------------
+LOOPS
+
+Loop Forever Function [Like "Forever" in Scratch]:
+
+    while (true)
+    {
+
+    }
+
+Loop 3 Times Function [Like "Repeat 3" in Scratch]
+
+    int counter = 0;
+    while (counter < 3)
+    {
+        printf("meow\n")
+        counter = counter + 1;
+    }
+
+or better
+
+    int i = 0;      // Initialization
+    while (i < 3)   // Check value
+{
+    printf("meow\n");
+    i += 1;         // Iteration
+}
+
+For Loop
+
+    for (int i = 0; i < 3; i++)
+    {
+        printf("meow\n");
+    }
+
+Do,While Loop
+
+    int n;
+    do
+    {
+        n = _____
+    }
+    while (n < 1);
+
+-------------------------------------
+MATH
+
+Add x + y:
+    float totalAmount = billAmount + tipAmount;
+
+Multiply x by (y / 100):
+    float taxAmount = bill * (tax / 100);
+
+Pass int variable as float:
+    float tipAmount = billAmount * (float)tip;
+    or
+    float tipAmount = billAmount * ((float)tip / 100);
+
+---------------------------------------
+ARRAYS
+
+Declaring basic array:
+    int scores[3];
+
+Settings variables for array:
+    int scores[3];
+    scores[0] = 72;
+    scores[1] = 73;
+    scores[2] = 33;
+
+------------------------------------------
+TYPE CASTING
+
+Temporarily pass a variable as a different data type:
+    char c1 = "H";
+    printf("%i\n", (int) c1);
+
+--------------------------------------------
+STRING LENGTHS
+
+Manually:
+    // Checks if position in string array is a character or NUL byte
+    int i = 0;
+    while (name[i] != '\0')
+    {
+        i++;
+    }
+    // Once NUL byte is reached, print string array length
+    printf("%i\n", i);
+
+Print string length using strlen function in <string.h>:
+    string s = get_string("Input: ");
+    int length = strlen(s);
+    printf("Length: %i", length);
+
+Print each character of string using strlen in <string.h>:
+    string s = get_string("Input: ");
+    int length = strlen(s);
+    for (int i = 0; i < length; i++)
+    {
+        printf("%c", s[i]);
+    }
+    printf("\n");
+
+------------------------------------------------
+EXIT CODES / EXIT STATUSES
+
+Exit if commandline argument is not provided:
+    int main (int argc, string argv[])
+    {
+        // If no argument provided after ./program_name
+        if (argc != 2)
+        {
+            printf("Missing command-line argument");
+            // Exit with return 1 (aborts program)
+            return 1;
+        }
+        // If argument is provided, function as intended
+        printf("hello %s\n", argv[1]);
+        return 0;
+    }

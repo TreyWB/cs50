@@ -1,0 +1,32 @@
+Walk Pavlov Game
+
+- On Start Flag -
+Prints "Press space to start"
+Starts music audio track
+
+
+- Main Func Loop -
+1. Move dog infinite steps forward
+
+2. If dog touching edge,
+   then turn 180 degrees
+ &
+   iterate edge count func
+ &
+   play woof audio track
+
+LOOP
+
+- End Day -
+If "Edge Count" = 3,
+   then print "That's enough for one day"
+ & 
+ Halt Main Func Loop
+
+ &
+ Enter bowl from (180,180)
+    then Print "Woof!"
+
+ &
+
+----------End Game-----------

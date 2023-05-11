@@ -1,0 +1,93 @@
+Example Functions - INTRO TO c
+
+Common syntax:
+function_name(  )
+
+arguments --> |Functions| --> side effects
+/
+arguments --> |Functions| --> return value
+
+
+
+Scratch Examples:
+hello, world --> |say| --> "hello, world" shown on screen
+
+What's your name? --> |ask (and wait)|
+                    answer
+
+
+C           |vs.|           Scratch
+-------------------------------------
+1. printf("hello, world"); | say->(hello,world)
+
+2. get_string("What's your name? "); | What's your name? --> |ask (and wait)
+    Return Blocks:
+        C:
+            answer = get_string("What's your name? ");
+
+        Scratch:
+            --> answer
+
+3. printf("hello, %s", answer); | say->[join (hello,) (answer)]
+
+
+** General Syntax & Rules: **
+
+Rules
+- Must end function (or line?) with ' ; '
+- ' = ' is the assignment operator
+- ' %s ' is a string placeholder
+- Common to type constant variable names in all caps
+    Ex: const int MINE = 2
+- Generally, loops and conditionals do not require a ' ; ' at the end
+- Generally, you use ' ; ' at the end of a function
+
+
+
+
+
+** List of Functions **
+
+STDIO Library
+1. printf(" ")
+    - Prints what is between the ""
+    - Ability to format placeholders
+        Ex: ' %s ' for a string placeholder
+    - Able to take 2 inputs, separated by a ' , '
+
+    Format Codes:
+    %s - string
+    %i - integer
+    %c - char
+    %f - float or double
+    %li - long integer
+
+
+CS50 Library
+1. get_char
+2. get_double
+3. get_float
+4. get_int
+    - Get number from user
+5. get_long
+6. get_string
+    - Get word(s) from user
+
+
+Operator List
++ | Addition
+- | Subtraction
+* | Multiplication
+/ | Division
+% | Remainder (Modulo) operator
+= | Assignment operator
+
+    - Division automatically truncates any numbers after decimal
+
+** Syntax Highlighting - Github Dark: **
+
+Lavender - Function
+Light Blue - String
+Dark Blue - Placeholder?
+Red -
+White -

@@ -1,0 +1,95 @@
+2:26:30
+
+Starting Terminology - INTRO TO C
+
+
+
+Function
+    - Actions / Verbs
+  Also Included:
+    - Arguments / Parameters (inputs)
+    - Return values (outputs) [they are reusable]
+
+Conditionals
+    - If, then (forks in the road)
+    - To use "or" in an if,then statement use ' || '
+    - To check if an int is equal to two things, use ' && '
+
+Boolean Expressions
+    - Yes/No questions & True/False questions
+
+Loops
+    - Forever & Repeat until (do things again and again)
+    - Takes a boolean argument
+
+--------------------------------------------------------------
+
+Variables
+    - Allow you to store values Terminology
+    *Required to provide name & also type of value
+
+
+Variable Data Types:
+1. Integer (int)
+2. String
+3. Boolean (bool)
+4. Character (char)
+5. Bigger Integer (long)
+6. Real Number [decimal number] (float)
+7. More precise real number (double)
+
+
+Variable Syntax:
+1. Set variable ' variable = 0; '
+        Ex: int counter = 0;
+
+2. Iterate a variable ' variable = variable + 1; '
+        Ex: counter = counter + 1;
+        or
+        Ex: counter += 1;
+        or
+        Ex: counter ++; [only works when iterating by one]
+
+
+PASSING VARIABLES FROM ONE FUNCTION TO ANOTHER:
+    - If passing input variables from main to secondary function - restate variables
+Ex:
+int main(void)
+{
+    float bill_amount = get_float("Bill before tax and tip: ");
+    float tax_percent = get_float("Sale Tax Percent: ");
+    int tip_percent = get_int("Tip percent: ");
+}
+
+float half(float bill, float tax, int tip)
+{
+
+}
+
+--------------------------------------------------------------------------------
+
+** Characteristics of Code **
+1. Correctness
+    - Does it solve the problem?
+2. Design
+    - Formulation, Structure, & Readibility
+    - Cleaness, Efficientness of algorithms
+3. Style
+    - Punctuation, Capitalization
+
+----------------------------------------------------------------
+
+
+Assingment: To store a value in a variable
+  Ex: answer = get_string("What's your name? ")
+   - The ' = ' Copies value from the function (right to left)
+
+String: A word, sentence, a couple words
+
+Source Code: Code that you write (human readable)
+    - Ex: "hello.c" "main.py"
+
+Machine Code: Binary version of source code (machine readable)
+
+Standard Input:
+Standard Output:
