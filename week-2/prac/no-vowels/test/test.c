@@ -16,11 +16,11 @@ int main(int argc, string argv[])
         return 1;
     }
     // printf("%s\n", replace(argv));
-    printf("Argv: %s\n", argv[1]);
+    printf("Argv: %s\n", replace(argv[1]));
     return 0;
 }
 
-string replace(string argv[])
+string replace(char argv[])
 {
     return 0;
 }
