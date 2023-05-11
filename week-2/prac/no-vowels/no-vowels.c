@@ -38,23 +38,27 @@ string replace(string input)
                                                                                 // printf("Lower: %c\n", c);
         if (input[i] == 'a')
         {
-            input[i] = '6';
+            output[i] = '6';
             return 0;
         }
-        if (input[i] == 'e')
+        else if (input[i] == 'e')
         {
-            input[i] = '3';
+            output[i] = '3';
             return 0;
         }
-        if (input[i] == 'i')
+        else if (input[i] == 'i')
         {
-            input[i] = '1';
+            output[i] = '1';
             return 0;
         }
-        if (input[i] == 'o')
+        else if (input[i] == 'o')
         {
-            input[i] = '0';
+            output[i] = '0';
             return 0;
+        }
+        else
+        {
+            output[i] = input[i];
         }
     }
 
