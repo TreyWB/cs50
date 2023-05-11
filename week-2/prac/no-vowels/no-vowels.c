@@ -55,5 +55,4 @@ string replace(string input)
     }
 
     return output;
-
 }
