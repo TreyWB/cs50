@@ -52,13 +52,8 @@ string replace(string input)
         {
             output[i] = '0';
         }
-        else
-        {
-            output[i] = input[i];
-        }
     }
 
-    // return replace; or return replaced;
     return output;
 
 }
