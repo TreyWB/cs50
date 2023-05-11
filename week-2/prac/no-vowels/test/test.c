@@ -10,17 +10,19 @@ string replace(string input);
 
 int main(int argc, string argv[])
 {
+    string word = argv[1];
+
     if (argc != 2)
     {
         printf("Missing command-line argument\n");
         return 1;
     }
-    printf("%s\n", replace(argv));
-    printf("Argv: %s\n", replace(argv[1]));
+    // printf("%s\n", replace(argv));
+    printf("Argv: %s\n", replace(word));
     return 0;
 }
 
-string replace(string input)
+string replace(string word)
 {
     return 0;
 }
