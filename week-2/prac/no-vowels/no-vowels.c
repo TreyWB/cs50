@@ -34,7 +34,7 @@ string replace(string input)
     for (int i = 0; i < len; i++)
     {
         // Replace uppercase letters with lowercase
-        char c = tolower(input[i]);
+        output[i] = tolower(input[i]);
                                                                                 // printf("Lower: %c\n", c);
         if (input[i] == 'a')
         {
