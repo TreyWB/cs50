@@ -39,22 +39,18 @@ string replace(string input)
         if (input[i] == 'a')
         {
             output[i] = '6';
-            return 0;
         }
         else if (input[i] == 'e')
         {
             output[i] = '3';
-            return 0;
         }
         else if (input[i] == 'i')
         {
             output[i] = '1';
-            return 0;
         }
         else if (input[i] == 'o')
         {
             output[i] = '0';
-            return 0;
         }
         else
         {
