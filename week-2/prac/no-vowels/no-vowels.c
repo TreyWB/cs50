@@ -5,6 +5,8 @@
 
 #include <cs50.h>
 #include <stdio.h>
+#include <string.h>
+#include <ctype.h>
 
 string replace(string argv[]);
 
@@ -22,11 +24,11 @@ int main(int argc, string argv[])
 string replace(string argv[])
 {
     int len;
-    len = argv[1];
+    len = strlen(argv[1]);
 
     string replaced;
 
-    for (i = 0; i < len; i++)
+    for (int i = 0; i < len; i++)
     {
         // Replace uppercase letters with lowercase
         if (isupper(char argv[1] == 'A'))
