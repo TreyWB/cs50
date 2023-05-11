@@ -8,7 +8,7 @@
 #include <string.h>
 #include <ctype.h>
 
-string replace(string argv[]);
+string replace(string input);
 
 int main(int argc, string argv[])
 {
@@ -18,10 +18,12 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    printf("Replaced: %s\n", replace(argv[1]));
+    string input = argv[1];
+
+    printf("Replaced: %s\n", replace(input));
 }
 
-string replace(string argv[])
+string replace(string input)
 {
     int len;
     len = strlen(argv[1]);
