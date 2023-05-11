@@ -31,7 +31,7 @@ string replace(string argv[])
     for (int i = 0; i < len; i++)
     {
         // Replace uppercase letters with lowercase
-        if (isupper(char argv[1] == 'A'))
+        if (isupper(argv[1] == 'A'))
         {
             argv[i] = 'A' + 32;
             return 0;
