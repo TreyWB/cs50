@@ -1,5 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <string.h>
 
 int main(void)
 {
@@ -10,7 +11,7 @@ int main(void)
     int len = strlen(cc_num);
     // Call to Function: checksum_total algorithm
     // If broken, try passing differently named variables into function
-    checksum_total(cc_num);
+    printf("Checksum Total: %i\n", checksum_total(cc_num));
 
     // Calc checksum_last from checksum_total
 
