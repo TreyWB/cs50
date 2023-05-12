@@ -32,7 +32,11 @@ int main(void)
     printf("Valid: %s\n", valid?"true":"false");
 
     // Output: Print "INVALID" if bool valid = false
-
+    if (valid == false)
+    {
+        printf("INVALID");
+    }
+    
     // Call to Function: first_two_digits
 
     // Call to Function: first_digit
