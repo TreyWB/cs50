@@ -73,7 +73,7 @@ int main(void)
 
     else if (length == 15 && valid == true)
     {
-        if (first_digit(cc_num) == 34 || first_digit(cc_num) == 37)
+        if (first_two_digit(cc_num) == 34 || first_two_digit(cc_num) == 37)
         {
             printf("AMEX\n");
             exit(0);
