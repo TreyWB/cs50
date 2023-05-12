@@ -35,10 +35,10 @@ int main(void)
                                                         // printf("Valid: %s\n", valid?"true":"false");
 
     // Output: Print "INVALID" if bool valid = false
-    if (valid == false)
-    {
-        printf("INVALID\n");
-    }
+    // if (valid == false)
+    // {
+    //     printf("INVALID\n");
+    // }
 
     // Check cc_num characteristics against issuer criteria
     if (length == 13 || length == 16)
@@ -53,8 +53,7 @@ int main(void)
             printf("MASTERCARD\n");
         }
     }
-
-    if (length == 15 && valid == true)
+    else if (length == 15 && valid == true)
     {
         do
         {
@@ -62,6 +61,7 @@ int main(void)
         }
         while (first_digit(cc_num) == 34 || first_digit(cc_num) == 37);
     }
+    else
 }
 
     // Function for checksum_total algorithm: Calculate checksum_total from cc_num
