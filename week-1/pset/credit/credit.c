@@ -18,7 +18,7 @@ int main(void)
 
     // Calc checksum_last from checksum_total
     int checksum_last;
-    int checksum_last = 0;
+    checksum_last = 0;
     bool valid;
 
     checksum_last = checksum_total(cc_num) % 10;
