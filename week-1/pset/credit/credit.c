@@ -247,7 +247,7 @@ int first_digit(string cc_num)
 
     if (len == 13)
     {
-
+        
     }
 }
         // Return
