@@ -48,10 +48,6 @@ int main(void)
         {
             printf("VISA\n");
         }
-        else
-        {
-            printf("INVALID\n");
-        }
 
         if (first_digit(cc_num) >= 51 && first_digit(cc_num) <= 55 && valid == true)
         {
@@ -62,6 +58,7 @@ int main(void)
             printf("INVALID\n");
         }
     }
+
     else if (length == 15 && valid == true)
     {
         if (first_digit(cc_num) == 34 || first_digit(cc_num) == 37)
@@ -73,6 +70,7 @@ int main(void)
             printf("INVALID\n");
         }
     }
+
     else if (length > 16 || length < 13 || length == 14)
     {
         printf("INVALID\n");
