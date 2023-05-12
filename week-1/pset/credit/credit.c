@@ -233,22 +233,26 @@ int first_digit(string cc_num)
     // Get cc_num length
     int len = strlen(cc_num);
 
-    int first_digit;
+    int first;
+
+    int number;
+    number = cc_num;
 
     if (len == 16)
     {
-        first_digit = cc_num / 1000000000000000;
+        first = number / 1000000000000000;
     }
 
     if (len == 15)
     {
-        first_digit = cc_num / 100000000000000;
+        first = number / 100000000000000;
     }
 
     if (len == 13)
     {
-        
+        first = number / 1000000000000;
     }
+    return first;
 }
         // Return
 
