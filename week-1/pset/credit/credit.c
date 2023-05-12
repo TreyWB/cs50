@@ -54,7 +54,21 @@ int checksum_total(int len, string cc_num)
         multiplied[6] = digit[2] * 2;
         multiplied[7] = digit[0] * 2;
 
+        // Sum up every multiplied number to get sum of stage1
         for (int i = 0; i < 8; i++)
+        {
+            stage1_sum += multiplied[i];
+        }
+
+        // Pull every number not yet pulled
+        stage2_sum += digit[15];
+        stage2_sum += digit[13];
+        stage2_sum += digit[11];
+        stage2_sum += digit[9];
+        stage2_sum += digit[7];
+        stage2_sum += digit[5];
+        stage2_sum += digit[3];
+        stage2_sum += digit[1];
     }
 
     if (len == '15')
