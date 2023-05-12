@@ -41,9 +41,13 @@ int main(void)
     }
 
     // Check cc_num characteristics against issuer criteria
-    if (len == 13 || len == 16)
+    if (length == 13 || length == 16)
     {
-        ;
+        do
+        {
+            printf("VISA\n");
+        }
+        while (first_digit(cc_num) == 4);
     }
 
     // Output: While bool valid = true, compare length & first digits to issuer list & print if both conditions match
