@@ -254,8 +254,10 @@ int first_digit(string cc_num)
     int len = strlen(cc_num);
 
     int first;
+    first = 0;
 
     int number;
+    number = 0;
     number = atoi(cc_num);
 
     if (len == 16)
