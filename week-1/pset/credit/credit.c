@@ -10,7 +10,7 @@ int main(void)
     int len = strlen(cc_num);
     // Call to Function: checksum_total algorithm
     // If broken, try passing differently named variables into function
-    checksum_total
+    checksum_total(cc_num);
 
     // Calc checksum_last from checksum_total
 
