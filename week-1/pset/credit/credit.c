@@ -35,10 +35,10 @@ int main(void)
                                                         // printf("Valid: %s\n", valid?"true":"false");
 
     // Output: Print "INVALID" if bool valid = false
-    // if (valid == false)
-    // {
-    //     printf("INVALID\n");
-    // }
+    if (valid == false)
+    {
+        printf("INVALID\n");
+    }
 
     // Check cc_num characteristics against issuer criteria
     if (length == 13 || length == 16)
@@ -60,10 +60,6 @@ int main(void)
             printf("AMEX\n");
         }
         while (first_digit(cc_num) == 34 || first_digit(cc_num) == 37);
-    }
-    else
-    {
-        printf("INVALID\n");
     }
 }
 
