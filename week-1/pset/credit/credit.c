@@ -19,7 +19,7 @@ int main(void)
     {
         for (int i = 0; i < strlen(cc_num); i++)
         {
-            cc_num[i];
+            isdigit(cc_num[i]);
         }
     }
     // Get cc_num length
