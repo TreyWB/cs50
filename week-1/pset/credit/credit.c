@@ -82,7 +82,7 @@ int checksum_total(string cc_num)
         stage2_sum += digit[1];
     }
 
-    else if (len == 15)
+    if (len == 15)
     {
         // Initializations
         int multiplied[7];
@@ -120,7 +120,7 @@ int checksum_total(string cc_num)
         stage2_sum += digit[0];
     }
 
-    else if (len == 13)
+    if (len == 13)
     {
         // Initializations
         int multiplied[6];
@@ -159,11 +159,9 @@ int checksum_total(string cc_num)
         int total;
         total = 0;
         total = stage1_sum + stage2_sum;
-
-        return total;
     }
-    else 
 
+    return total;
 }
 
     // Function for first_two_digit: While bool valid = true, get first two digits of cc_num
