@@ -137,6 +137,13 @@ int checksum_total(int len, string cc_num)
         stage2_sum += digit[4];
         stage2_sum += digit[2];
         stage2_sum += digit[0];
+
+        // Adding stage1 sum and stage2 sum together to get checksum_total
+        int checksum_total;
+        checksum_total = 0;
+        checksum_total = stage1_sum + stage2_sum;
+
+        return checksum_total;
     }
 }
 
