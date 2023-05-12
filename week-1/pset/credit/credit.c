@@ -29,7 +29,7 @@ int main(void)
     else (valid = false);
 
     printf("Checksum Last: %i\n", checksum_last);
-    printf("Valid: %");
+    printf("Valid: %s", valid?"true":"false");
     // Use checksum_last to determine whether cc_num is valid (using bool valid)
 
     // Output: Print "INVALID" if bool valid = false
