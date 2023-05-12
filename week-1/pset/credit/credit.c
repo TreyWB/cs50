@@ -147,19 +147,6 @@ int checksum_total(int len, string cc_num)
     }
 }
 
-
-            // Multiply each pulled stage1-digit by 2
-
-            // Total stage1-sums to get sum1
-
-        // Pull last-number from cc_num & every other number starting at last-number
-
-            // Add each pulled stage2-digit to get sum2
-
-        // Add sum1 + sum2 = checksum_total
-
-        // Return
-
     // Function for first_two_digit: While bool valid = true, get first two digits of cc_num
 
         // Return
