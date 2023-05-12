@@ -40,7 +40,7 @@ int checksum_total(int len, string cc_num)
     {
         for (int i = 0; i < len; i++)
         {
-            digit[i] = (cc_num[i] - 48)
+            digit[i] = (cc_num[i] - 48);
         }
     }
 
