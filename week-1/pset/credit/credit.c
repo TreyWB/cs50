@@ -17,7 +17,11 @@ int main(void)
     printf("Checksum Total: %i\n", checksum_total(cc_num));
 
     // Calc checksum_last from checksum_total
+    int checksum_last;
+    int checksum_last = 0;
+    bool valid;
 
+    checksum_last = checksum_total(cc_num) % 10;
     // Use checksum_last to determine whether cc_num is valid (using bool valid)
 
     // Output: Print "INVALID" if bool valid = false
