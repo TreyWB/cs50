@@ -22,7 +22,7 @@ int main(void)
         stage1_sum = 0;
 
     // Saving each digit in cc_num seperately, into the digit[] array
-    for (int i = 0; i < 2; i++)
+    for (int i = 0; i < 3; i++)
     {
         int split1;
         split1 = 0;
