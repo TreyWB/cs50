@@ -13,15 +13,15 @@ int main(void)
     int length = strlen(cc_num);
 
     // Call to Function: checksum_total algorithm
-    // If broken, try passing differently named variables into function
     printf("Checksum Total: %i\n", checksum_total(cc_num));
 
-    // Calc checksum_last from checksum_total
     int checksum_last;
     checksum_last = 0;
     bool valid;
 
+    // Use checksum_last to determine whether cc_num is valid (using bool valid)
     checksum_last = checksum_total(cc_num) % 10;
+    // Calc checksum_last from checksum_total
     if (checksum_last == 0)
     {
         valid = true;
@@ -29,8 +29,7 @@ int main(void)
     else (valid = false);
 
     printf("Checksum Last: %i\n", checksum_last);
-    printf("Valid: %s", valid?"true":"false");
-    // Use checksum_last to determine whether cc_num is valid (using bool valid)
+    printf("Valid: %s\n", valid?"true":"false");
 
     // Output: Print "INVALID" if bool valid = false
 
