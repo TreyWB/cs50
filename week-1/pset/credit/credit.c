@@ -38,7 +38,7 @@ int main(void)
     if (valid == false)
     {
         printf("INVALID\n");
-        return -1;
+        exit(0);
     }
 
     // Check cc_num characteristics against issuer criteria
