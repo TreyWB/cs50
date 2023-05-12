@@ -30,7 +30,11 @@ int main(void)
 int checksum_total(int len, string cc_num)
 {
     int multiplied[];
-    
+    int stage1_sum;
+    stage1_sum = 0;
+    int stage2_sum;
+    stage2_sum = 0;
+    int 
 
     if (len == '16')
     {
