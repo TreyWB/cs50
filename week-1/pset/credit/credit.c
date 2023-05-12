@@ -48,10 +48,18 @@ int main(void)
         {
             printf("VISA\n");
         }
+        else
+        {
+            printf("INVALID\n");
+        }
 
         if (first_digit(cc_num) >= 51 && first_digit(cc_num) <= 55 && valid == true)
         {
             printf("MASTERCARD\n");
+        }
+        else
+        {
+            printf("INVALID\n");
         }
     }
     else if (length == 15 && valid == true)
