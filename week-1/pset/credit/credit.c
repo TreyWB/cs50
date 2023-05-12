@@ -14,7 +14,13 @@ int main(void)
     {
         string cc_num = get_string("Number: ");
     }
-    while ();
+    while
+    {
+        for (int i = 0; i < strlen(cc_num); i++)
+        {
+            cc_num[i];
+        }
+    }
     // Get cc_num length
     int length = strlen(cc_num);
 
