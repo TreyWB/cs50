@@ -42,6 +42,14 @@ int checksum_total(int len, string cc_num)
         {
             digit[i] = (cc_num[i] - 48);
         }
+    multiplied[0] = digit[14] * 2
+	multiplied[1] = digit[12] * 2
+	multiplied[2] = digit[10] * 2
+	multiplied[3] = digit[8] * 2
+	multiplied[4] = digit[6] * 2
+	multiplied[5] = digit[4] * 2
+	multiplied[6] = digit[2] * 2
+	multiplied[7] = digit[0] * 2
     }
 
     if (len == '15')
