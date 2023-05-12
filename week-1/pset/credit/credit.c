@@ -16,7 +16,7 @@ int main(void)
     int length = strlen(cc_num);
 
     // Call to Function: checksum_total algorithm
-    printf("Checksum: %i\n", checksum_total(cc_num));
+                                                        // printf("Checksum: %i\n", checksum_total(cc_num));
 
     int checksum_last;
     checksum_last = 0;
@@ -31,8 +31,8 @@ int main(void)
     }
     else (valid = false);
 
-    printf("Checksum Last: %i\n", checksum_last);
-    printf("Valid: %s\n", valid?"true":"false");
+                                                        // printf("Checksum Last: %i\n", checksum_last);
+                                                        // printf("Valid: %s\n", valid?"true":"false");
 
     // Output: Print "INVALID" if bool valid = false
     if (valid == false)
@@ -62,9 +62,6 @@ int main(void)
         }
         while (first_digit(cc_num) == 34 || first_digit(cc_num) == 37);
     }
-
-    // Output: While bool valid = true, compare length & first digits to issuer list & print if both conditions match
-
 }
 
     // Function for checksum_total algorithm: Calculate checksum_total from cc_num
@@ -256,7 +253,7 @@ int first_digit(string cc_num)
     int first;
     first = 0;
 
-    printf("CC Num: %s\n", cc_num);
+                                                                        // printf("CC Num: %s\n", cc_num);
 
     long number;
     number = 0;
