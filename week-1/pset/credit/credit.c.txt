@@ -1,0 +1,103 @@
+Credit.c Psuedocode
+
+-----
+Ideas:
+- First check cc_num long int length
+- After, use if else statements to definite arrays for 13, 14, 15, etc. lenghts
+- Then choose array, and pull each digit out and store in corresponding array
+
+Potential:
+- Could fprint to file instead of printing to array
+- Implement cc_num using string instead of long
+	-If possible, restrict input to only allow numbers
+
+- Use new array to set multiplied values - step1[n] = argv[n] * 2; n = second to last, etc.
+- Use for loop to get totals - total += argv[i]
+
+- Maybe near end of calc function, define final numbers by passing argv[i] as an int
+
+ALWAYS DO CC_NUM LENGTH -1 WHEN CALLING SPECIFIC DIGIT NUMBER IN ARRAY
+
+
+main(void)
+{
+// Get user input for cc number $cc_num*
+	long_int cc_num;
+	cc_num = get_long("Number: ");
+
+		
+// Output: Prints if $cc_num is valid
+	*Function to check if last digit of checksum = 0
+// Done by taking remainder of $cc_num [remainder is always last digit]	
+
+	int $checksum_last
+	$checksum_last = $checksum_total % 10
+
+	if ($checksum_last = 0)
+	{
+	bool valid = true
+	}
+	else (bool valid = false)
+
+	if (bool valid = false)
+	{
+	printf("INVALID\n")
+	}
+
+	while (bool valid = true);
+// Function to check first 2 numbers in $cc_num & compare w/ list
+	do
+		{
+			int $first_two_digit;
+			int $first_digit;
+
+			$first_digit = $cc_num / 1000000000000000
+			$first_two_digit = $cc_num / 100000000000000
+
+// Also need to check $cc_num length & compare to typical issuer lenghts before print
+
+			if $first_two_digit = [amex_list]
+			{
+			printf("AMEX\n")
+			}
+	
+			if $first_two_digit = [mastercard_list]
+			{
+			printf("MASTERCARD\n")
+			}
+	
+			if $first_digit = 4 [visa_list]
+			{
+			printf("VISA\n")
+			}
+
+// Algorithm to calculate $checksum_total
+
+		}
+
+------------------------------------------------------------------------------
+ISSUER STATS based on cc number:
+
+-- American Express --
+Starting Numbers:
+- 34
+- 37
+Length:
+- 15 digits
+
+-- Mastercard --
+Starting Numbers:
+- 51
+- 52
+- 53
+- 54
+- 55
+Length:
+- 16 digits
+
+-- Visa --
+Starting Number:
+- 4
+Lenghts:
+- 13 digits
+- 16 digits

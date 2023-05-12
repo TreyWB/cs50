@@ -1,0 +1,123 @@
+Credit.c Operations:
+
+1. Get cc_num as user input
+2. Get string length on cc_num
+3. For loop
+	4. Create digit[] and initalize digit[i] to 0
+	// Subtract 48 from cc_num[i] to convert from ASCII to int
+	5. Set digit[i] = (cc_num[i] - 48)
+
+6. Define multiplied[]
+7. Define stage1_sum; initialize to '0'
+8. Define stage2_sum; initialize to '0'
+9. If len = 16; 8 to multipy
+	// Get 2nd to last
+	digit[14] 
+	// Get every other before 2nd to last
+	digit[12]
+	digit[10]
+	digit[8]
+	digit[6]
+	digit[4]
+	digit[2]
+	digit[0]
+	--------
+	// Multiply pulled numbers by 2
+	multiplied[0] = digit[14] * 2
+	multiplied[1] = digit[12] * 2
+	multiplied[2] = digit[10] * 2
+	multiplied[3] = digit[8] * 2
+	multiplied[4] = digit[6] * 2
+	multiplied[5] = digit[4] * 2
+	multiplied[6] = digit[2] * 2
+	multiplied[7] = digit[0] * 2
+	--------
+	// Sum up multiplied numbers
+	FOR LOOP; incrementing up to 8
+	stage1_sum += multiplied[i]
+	--------
+	// Pull every number not yet pulled
+	stage2_sum += digit[15]
+	stage2_sum += digit[13]
+	stage2_sum += digit[11]
+	stage2_sum += digit[9]
+	stage2_sum += digit[7]
+	stage2_sum += digit[5]
+	stage2_sum += digit[3]
+	stage2_sum += digit[1]
+
+9. If len = 15; 7 to multiply
+	// Get 2nd to last
+	digit[13]
+	// Get every other before 2nd to last
+	digit[11]
+	digit[9]
+	digit[7]
+	digit[5]
+	digit[3]
+	digit[1]
+	--------
+	// Multiply pulled numbers by 2
+	multiplied[0] = digit[13] * 2
+	multiplied[1] = digit[11] * 2
+	multiplied[2] = digit[9] * 2
+	multiplied[3] = digit[7] * 2
+	multiplied[4] = digit[5] * 2
+	multiplied[5] = digit[3] * 2
+	multiplied[6] = digit[1] * 2
+	--------
+	// Sum up multiplied numbers
+	FOR LOOP; incrementing up to 7
+	stage1_sum += multiplied[i]
+	--------
+	// Pull every number not yet pulled
+	stage2_sum += digit[14]
+	stage2_sum += digit[12]
+	stage2_sum += digit[10]
+	stage2_sum += digit[8]
+	stage2_sum += digit[6]
+	stage2_sum += digit[4]
+	stage2_sum += digit[2]
+	stage2_sum += digit[0]
+
+9. If len = 13; 6 to multiply
+	// Get 2nd to last
+	digit[11]
+	// Get every other before 2nd to last
+	digit[9]
+	digit[7]
+	digit[5]
+	digit[3]
+	digit[1]
+	--------
+	// Multiply pulled numbers by 2
+	multiplied[0] = digit[11] * 2
+	multiplied[1] = digit[9] * 2
+	multiplied[2] = digit[7] * 2
+	multiplied[3] = digit[5] * 2
+	multiplied[4] = digit[3] * 2
+	multiplied[5] = digit[1] * 2
+	--------
+	// Sum up multiplied numbers
+	FOR LOOP; incrementing up to 6
+	stage1_sum += multiplied[i]
+	--------
+	// Pull every number not yet pulled
+	stage2_sum += digit[12]
+	stage2_sum += digit[10]
+	stage2_sum += digit[8]
+	stage2_sum += digit[6]
+	stage2_sum += digit[4]
+	stage2_sum += digit[2]
+	stage2_sum += digit[0]
+
+10. Add our sums together
+	checksum_total = stage1_sum + stage2_sum
+
+11. Check if last digit of checksum_total is 0 [Reference: TO FIND LAST DIGIT OF TOTAL]
+12. Print INVALID if last digit of checksum_total != '0'
+13. Call function first_digit [Reference: TO FIND FIRST DIGITS]
+	if first_digit = 4 && len = 13 OR 16, print "VISA"
+14. Call function first_two_digits [Reference: TO FIND FIRST DIGITS]
+	if first_two_digits = 34 OR 37 && len = 15; print "AMEX"
+	else if first_two_digits = 51 - 55 & len = 16; print "MASTERCARD"

@@ -1,0 +1,45 @@
+sample cc number:
+
+4003600000000014
+
+TO FIND LAST DIGIT OF TOTAL [for checksum]
+int $checksum_last = $total % 10 [Provides last digit as remainder]
+
+if $checksum_last = 0
+{
+bool valid = true;
+}
+else (bool valid = false)
+
+if bool valid = false
+{
+printf("INVALID\n")
+}
+
+TO FIND FIRST DIGITS
+
+int $first_digit;
+$first_digit = $cc_num / 1000000000000000
+
+int $first_two_digit;
+$first_two_digit = $cc_num / 100000000000000
+
+FIRST DIGITS
+15 zeros - len 16:
+$cc_num / 1000000000000000
+
+14 zeros - len 15:
+$cc_num / 100000000000000
+
+12 zeros - len 13:
+$cc_num / 1000000000000
+
+FIRST TWO DIGITS
+14 zeros - len 16:
+$cc_num / 100000000000000
+
+13 zeros - len 15:
+$cc_num / 10000000000000
+
+11 zeros - len 13:
+$cc_num / 100000000000
