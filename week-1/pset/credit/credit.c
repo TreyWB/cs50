@@ -260,7 +260,7 @@ int first_digit(string cc_num)
 
     long number;
     number = 0;
-    number = atoi(cc_num);
+    number = atof(cc_num);
 
     if (len == 16)
     {
