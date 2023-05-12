@@ -193,7 +193,7 @@ int checksum_total(string cc_num)
         // Move each digit from cc_num into digit array
         for (int i = 0; i < len; i++)
         {
-            digit[i] = (cc_num[i] - 1);
+            digit[i] = (cc_num[i] - 48);
         }
 
         // Taking 2nd to last & every other number before (stage1 digits) then multiplying stage1 digits by 2
