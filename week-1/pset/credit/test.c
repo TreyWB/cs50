@@ -14,7 +14,7 @@ int main(void)
     // Defining cc_num array, automatically defines length of array based on cc_num_length
     int digit[len];
 
-    int multiplied[2];
+    int multiplied[3];
     multiplied[0] = 3;
     multiplied[1] = 12;
     multiplied[2] = 5;
