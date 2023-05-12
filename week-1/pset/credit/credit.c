@@ -22,6 +22,7 @@ int main(void)
     bool valid;
 
     checksum_last = checksum_total(cc_num) % 10;
+    
     // Use checksum_last to determine whether cc_num is valid (using bool valid)
 
     // Output: Print "INVALID" if bool valid = false
