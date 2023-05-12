@@ -36,7 +36,7 @@ int main(void)
     {
         printf("INVALID");
     }
-    
+
     // Call to Function: first_two_digits
 
     // Call to Function: first_digit
@@ -228,7 +228,10 @@ int checksum_total(string cc_num)
 }
 
     // Function for first_two_digit: While bool valid = true, get first two digits of cc_num
-
+int first_digit(string cc_num)
+{
+    
+}
         // Return
 
     // Function for first_digit: While bool valid = true, get first digit of cc_num
