@@ -31,7 +31,7 @@ int main(void)
     }
     else (valid = false);
 
-                                                        printf("Checksum Last: %i\n", checksum_last);
+                                                        // printf("Checksum Last: %i\n", checksum_last);
                                                         // printf("Valid: %s\n", valid?"true":"false");
 
     // Output: Print "INVALID" if bool valid = false
