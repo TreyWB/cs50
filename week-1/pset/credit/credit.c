@@ -27,7 +27,10 @@ int main(void)
 }
 
     // Function for checksum_total algorithm: Calculate checksum_total from cc_num
-
+int checksum_total(int len, string cc_num)
+{
+    
+}
         // Pull second-to-last from cc_num & every other number starting at second-to-last
 
             // Multiply each pulled stage1-digit by 2
