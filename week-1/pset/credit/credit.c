@@ -47,11 +47,13 @@ int main(void)
         if (first_digit(cc_num) == 4 && valid == true)
         {
             printf("VISA\n");
+            exit(0);
         }
 
         if (first_two_digit(cc_num) >= 51 && first_two_digit(cc_num) <= 55 && valid == true)
         {
             printf("MASTERCARD\n");
+            exit(0);
         }
         else
         {
@@ -64,16 +66,19 @@ int main(void)
         if (first_digit(cc_num) == 34 || first_digit(cc_num) == 37)
         {
             printf("AMEX\n");
+            exit(0);
         }
         else
         {
             printf("INVALID\n");
+            exit(0);
         }
     }
 
     else if (length > 16 || length < 13 || length == 14)
     {
         printf("INVALID\n");
+        exit(0);
     }
 }
 
