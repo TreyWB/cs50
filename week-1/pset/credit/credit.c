@@ -53,7 +53,7 @@ int main(void)
         {
             printf("MASTERCARD\n");
         }
-        while (first_digit(cc_num) == )
+        while (first_digit(cc_num) <= 55 && >= 51);
     }
 
     if ()
