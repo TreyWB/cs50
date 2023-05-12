@@ -16,7 +16,7 @@ int main(void)
     int length = strlen(cc_num);
 
     // Call to Function: checksum_total algorithm
-    printf("Checksum Total: %i\n", checksum_total(cc_num));
+    printf("Checksum: %i\n", checksum_total(cc_num));
 
     int checksum_last;
     checksum_last = 0;
