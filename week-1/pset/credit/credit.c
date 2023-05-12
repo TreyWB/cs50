@@ -9,7 +9,7 @@ int main(void)
     // Get cc_num length
     int len = strlen(cc_num);
     // Call to Function: checksum_total algorithm
-
+    
     // Calc checksum_last from checksum_total
 
     // Use checksum_last to determine whether cc_num is valid (using bool valid)
@@ -153,6 +153,22 @@ int checksum_total(int len, string cc_num)
 
     // Function for first_digit: While bool valid = true, get first digit of cc_num
         // Return
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     // Function for length: While bool valid = true, get length of cc_num
         // Return
