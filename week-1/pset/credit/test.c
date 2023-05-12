@@ -33,6 +33,8 @@ int main(void)
         {
             stage1_sum += multiplied[i];
         }
+        while (multiplied[i] < 9);
+        
         else (multiplied[i] > 9)
         {
             split1 = multiplied[i] / 10;
