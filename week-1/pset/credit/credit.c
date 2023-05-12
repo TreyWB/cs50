@@ -256,6 +256,8 @@ int first_digit(string cc_num)
     int first;
     first = 0;
 
+    printf("CC Num: %s\n", cc_num);
+
     long number;
     number = 0;
     number = atoi(cc_num);
