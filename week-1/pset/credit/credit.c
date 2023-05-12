@@ -11,17 +11,15 @@ int first_two_digit(string cc_num);
 int main(void)
 {
     // Input: Get cc_num from user input
-    do
+    for (int i = 0; i < strlen(cc_num); i++)
     {
-        string cc_num = get_string("Number: ");
-    }
-    while
-    {
-        for (int i = 0; i < strlen(cc_num); i++)
+        do
         {
-            isdigit(cc_num[i]) != 0;
+            string cc_num = get_string("Number: ");
         }
+        while (isdigit(cc_num[i]) != 0);
     }
+
     // Get cc_num length
     int length = strlen(cc_num);
 
