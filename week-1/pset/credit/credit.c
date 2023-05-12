@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int checksum_total(int len, string num);
+int checksum_total(string num);
 
 int main(void)
 {
@@ -10,7 +10,8 @@ int main(void)
     string cc_num = get_string("Number: ");
 
     // Get cc_num length
-    int len = strlen(cc_num);
+    int length = strlen(cc_num);
+
     // Call to Function: checksum_total algorithm
     // If broken, try passing differently named variables into function
     printf("Checksum Total: %i\n", checksum_total(cc_num));
@@ -32,7 +33,7 @@ int main(void)
 }
 
     // Function for checksum_total algorithm: Calculate checksum_total from cc_num
-int checksum_total(int len, string cc_num)
+int checksum_total(string cc_num)
 {
     int multiplied[];
     int stage1_sum;
@@ -40,6 +41,9 @@ int checksum_total(int len, string cc_num)
     int stage2_sum;
     stage2_sum = 0;
     int digit[];
+
+    // Get cc_num length
+    int len = strlen(cc_num);
 
     if (len == '16')
     {
