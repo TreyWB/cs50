@@ -68,7 +68,23 @@ int checksum_total(string cc_num)
         // Sum up every multiplied number to get sum of stage1
         for (int i = 0; i < 8; i++)
         {
-            stage1_sum += multiplied[i];
+            int split1;
+            int split2;
+            split1 = 0;
+            split2 = 0;
+
+            if (multiplied[i] <= 9)
+            {
+                stage1_sum += multiplied[i];
+            }
+
+            else if (multiplied[i] > 9)
+            {
+                split1 = multiplied[i] / 10;
+                split2 = multiplied[i] % 10;
+                stage1_sum += split1;
+                stage2_sum += splti2;
+            }
         }
 
         // Pull every number not yet pulled & getting sum of stage2
