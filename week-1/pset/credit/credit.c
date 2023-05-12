@@ -82,7 +82,15 @@ int checksum_total(int len, string cc_num)
         }
 
         // Taking 2nd to last & every other number before (stage1 digits) then multiplying stage1 digits by 2
-        
+        multiplied[0] = digit[13] * 2;
+        multiplied[1] = digit[11] * 2;
+        multiplied[2] = digit[9] * 2;
+        multiplied[3] = digit[7] * 2;
+        multiplied[4] = digit[5] * 2;
+        multiplied[5] = digit[3] * 2;
+        multiplied[6] = digit[1] * 2;
+
+        for (i = )
     }
 
     if (len == '13')
