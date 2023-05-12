@@ -21,6 +21,14 @@ int main(void)
     int stage1_sum;
     stage1_sum = 0;
 
+
+
+
+
+
+
+
+
     // Saving each digit in cc_num seperately, into the digit[] array
     for (int i = 0; i < 2; i++)
     {
@@ -47,6 +55,18 @@ int main(void)
         printf("Total: %i\n", stage1_sum);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
         // if (multiplied[i] > 9)
         // {
         //     split1 = multiplied[i] / 10;
