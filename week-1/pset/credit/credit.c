@@ -1,6 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 int checksum_total(string num);
 
@@ -236,7 +237,7 @@ int first_digit(string cc_num)
     int first;
 
     int number;
-    number = cc_num;
+    number = atoi(cc_num);
 
     if (len == 16)
     {
