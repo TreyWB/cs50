@@ -286,9 +286,11 @@ int first_two_digit(string cc_num)
     int len = strlen(cc_num);
 
     int first_two;
+    first_two = 0;
 
-    int number;
-    number = atoi(cc_num);
+    long number;
+    number = 0;
+    number = atof(cc_num);
 
     if (len == 16)
     {
