@@ -254,6 +254,7 @@ int first_digit(string cc_num)
     {
         first = number / 1000000000000;
     }
+
     return first;
 }
 
@@ -269,18 +270,20 @@ int first_two_digit(string cc_num)
 
     if (len == 16)
     {
-        first_two = number / 
+        first_two = number / 100000000000000;
     }
 
     if (len == 15)
     {
-
+        first_two = number / 10000000000000;
     }
 
     if (len == 13)
     {
-
+        first_two = number / 100000000000;
     }
+
+    return first_two;
 }
 
     // Function for first_digit: While bool valid = true, get first digit of cc_num
