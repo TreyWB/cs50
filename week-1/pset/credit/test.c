@@ -14,12 +14,14 @@ int main(void)
     // Defining cc_num array, automatically defines length of array based on cc_num_length
     int digit[len];
 
-    // Saving each digit in cc_num seperately, into the digit[] array
-    for (int i = 0; i < len; i++)
-    {
-        digit[i] = 0;
-        digit[i] = (cc_num[i] - 48);
-        printf("Digit: %i\n", digit[i]);
+    int multiplied[2];
+    multiplied[0] = 3;
+    multiplied[1] = 12;
+    multiplied[2] = 5;
 
+    // Saving each digit in cc_num seperately, into the digit[] array
+    for (int i = 0; i < 2; i++)
+    {
+        stage1_sum += multiplied[i];
     }
 }
