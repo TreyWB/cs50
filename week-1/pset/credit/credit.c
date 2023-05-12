@@ -48,7 +48,15 @@ int main(void)
             printf("VISA\n");
         }
         while (first_digit(cc_num) == 4);
+
+        do
+        {
+            printf("MASTERCARD\n");
+        }
+        while (first_digit(cc_num) == )
     }
+
+    if ()
 
     // Output: While bool valid = true, compare length & first digits to issuer list & print if both conditions match
 
