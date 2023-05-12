@@ -4,6 +4,7 @@
 #include <stdlib.h>
 
 int checksum_total(string num);
+int first_digit(string cc_num);
 
 int main(void)
 {
