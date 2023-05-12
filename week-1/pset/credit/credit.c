@@ -109,10 +109,34 @@ int checksum_total(int len, string cc_num)
 
     if (len == '13')
     {
+        // Move each digit from cc_num into digit array
         for (i = 0; i < len; i++)
         {
-            
+            digit[i] = (cc_num[i] - 1);
         }
+
+        // Taking 2nd to last & every other number before (stage1 digits) then multiplying stage1 digits by 2
+        multiplied[0] = digit[11] * 2;
+        multiplied[1] = digit[9] * 2;
+        multiplied[2] = digit[7] * 2;
+        multiplied[3] = digit[5] * 2;
+        multiplied[4] = digit[3] * 2;
+        multiplied[5] = digit[1] * 2;
+
+        // Sum up every multiplied number to get sum of stage1
+        for (i = 0; i < 6; i++)
+        {
+            stage1_sum += multiplied[i];
+        }
+
+        // Pull every number not yet pulled & getting sum of stage2
+        stage2_sum += digit[12];
+        stage2_sum += digit[10];
+        stage2_sum += digit[8];
+        stage2_sum += digit[6];
+        stage2_sum += digit[4];
+        stage2_sum += digit[2];
+        stage2_sum += digit[0];
     }
 }
 
