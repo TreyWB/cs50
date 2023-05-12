@@ -13,20 +13,10 @@ int main(void)
     // Input: Get cc_num from user input
     string cc_num = get_string("Number: ");
 
-    // for (int i = 0; i < strlen(cc_num); i++)
-    // {
-    //     do
-    //     {
-    //         cc_num = get_string("Number: ");
-    //     }
-    //     while (isdigit(cc_num[i]) == 0);
-    // }
-
    // Get cc_num length
     int length = strlen(cc_num);
 
     // Call to Function: checksum_total algorithm
-                                                        // printf("Checksum: %i\n", checksum_total(cc_num));
 
     int checksum_last;
     checksum_last = 0;
@@ -34,15 +24,13 @@ int main(void)
 
     // Use checksum_last to determine whether cc_num is valid (using bool valid)
     checksum_last = checksum_total(cc_num) % 10;
+
     // Calc checksum_last from checksum_total
     if (checksum_last == 0)
     {
         valid = true;
     }
     else (valid = false);
-
-                                                        // printf("Checksum Last: %i\n", checksum_last);
-                                                        // printf("Valid: %s\n", valid?"true":"false");
 
     // Output: Print "INVALID" if bool valid = false
     if (valid == false)
@@ -92,7 +80,7 @@ int main(void)
     }
 }
 
-    // Function for checksum_total algorithm: Calculate checksum_total from cc_num
+// Function for checksum_total algorithm: Calculate checksum_total from cc_num
 int checksum_total(string cc_num)
 {
     int stage1_sum;
@@ -272,7 +260,7 @@ int checksum_total(string cc_num)
     return total;
 }
 
-    // Function for first_two_digit: While bool valid = true, get first two digits of cc_num
+// Function for first_two_digit: While bool valid = true, get first two digits of cc_num
 int first_digit(string cc_num)
 {
     // Get cc_num length
@@ -280,8 +268,6 @@ int first_digit(string cc_num)
 
     int first;
     first = 0;
-
-                                                                        // printf("CC Num: %s\n", cc_num);
 
     long number;
     number = 0;
@@ -334,25 +320,3 @@ int first_two_digit(string cc_num)
 
     return first_two;
 }
-
-    // Function for first_digit: While bool valid = true, get first digit of cc_num
-        // Return
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // Function for length: While bool valid = true, get length of cc_num
-        // Return
