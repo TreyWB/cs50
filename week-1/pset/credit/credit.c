@@ -29,7 +29,24 @@ int main(void)
     // Function for checksum_total algorithm: Calculate checksum_total from cc_num
 int checksum_total(int len, string cc_num)
 {
+    int multiplied[];
     
+
+    if (len == '16')
+    {
+        // Get 2nd to last
+        digit[14]
+    }
+
+    if (len == '15')
+    {
+
+    }
+
+    if (len == '13')
+    {
+
+    }
 }
         // Pull second-to-last from cc_num & every other number starting at second-to-last
 
