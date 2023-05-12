@@ -31,7 +31,7 @@ int main(void)
     }
     else (valid = false);
 
-                                                        // printf("Checksum Last: %i\n", checksum_last);
+                                                        printf("Checksum Last: %i\n", checksum_last);
                                                         // printf("Valid: %s\n", valid?"true":"false");
 
     // Output: Print "INVALID" if bool valid = false
@@ -62,7 +62,9 @@ int main(void)
         while (first_digit(cc_num) == 34 || first_digit(cc_num) == 37);
     }
     else
-
+    {
+        printf("INVALID\n");
+    }
 }
 
     // Function for checksum_total algorithm: Calculate checksum_total from cc_num
