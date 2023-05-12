@@ -49,7 +49,7 @@ int main(void)
             printf("VISA\n");
         }
 
-        if (first_digit(cc_num) >= 51 && first_digit(cc_num) <= 55 && valid == true)
+        if (first_two_digit(cc_num) >= 51 && first_two_digit(cc_num) <= 55 && valid == true)
         {
             printf("MASTERCARD\n");
         }
