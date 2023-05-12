@@ -34,12 +34,14 @@ int checksum_total(int len, string cc_num)
     stage1_sum = 0;
     int stage2_sum;
     stage2_sum = 0;
-    int 
+    int digit[];
 
     if (len == '16')
     {
-        // Get 2nd to last
-        digit[14]
+        for (int i = 0; i < len; i++)
+        {
+            digit[i] = (cc_num[i] - 48)
+        }
     }
 
     if (len == '15')
