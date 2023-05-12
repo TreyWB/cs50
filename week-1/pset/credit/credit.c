@@ -256,7 +256,32 @@ int first_digit(string cc_num)
     }
     return first;
 }
-        // Return
+
+int first_two_digit(string cc_num)
+{
+    // Get cc_num length
+    int len = strlen(cc_num);
+
+    int first_two;
+
+    int number;
+    number = atoi(cc_num);
+
+    if (len == 16)
+    {
+        first_two = number / 
+    }
+
+    if (len == 15)
+    {
+
+    }
+
+    if (len == 13)
+    {
+
+    }
+}
 
     // Function for first_digit: While bool valid = true, get first digit of cc_num
         // Return
