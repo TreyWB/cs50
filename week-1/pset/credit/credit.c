@@ -154,12 +154,12 @@ int checksum_total(string cc_num)
         stage2_sum += digit[4];
         stage2_sum += digit[2];
         stage2_sum += digit[0];
-
-        // Adding stage1 sum and stage2 sum together to get total
-        int total;
-        total = 0;
-        total = stage1_sum + stage2_sum;
     }
+
+    // Adding stage1 sum and stage2 sum together to get total
+    int total;
+    total = 0;
+    total = stage1_sum + stage2_sum;
 
     return total;
 }
