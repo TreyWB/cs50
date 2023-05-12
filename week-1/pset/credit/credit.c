@@ -61,7 +61,7 @@ int checksum_total(int len, string cc_num)
             stage1_sum += multiplied[i];
         }
 
-        // Pull every number not yet pulled
+        // Pull every number not yet pulled & getting sum of stage2
         stage2_sum += digit[15];
         stage2_sum += digit[13];
         stage2_sum += digit[11];
@@ -90,12 +90,29 @@ int checksum_total(int len, string cc_num)
         multiplied[5] = digit[3] * 2;
         multiplied[6] = digit[1] * 2;
 
-        for (i = )
+        // Sum up every multiplied number to get sum of stage1
+        for (i = 0; i < 7; i++)
+        {
+            stage1_sum += multiplied[i];
+        }
+
+        // Pull every number not yet pulled & getting sum of stage2
+        stage2_sum += digit[14];
+        stage2_sum += digit[12];
+        stage2_sum += digit[10];
+        stage2_sum += digit[8];
+        stage2_sum += digit[6];
+        stage2_sum += digit[4];
+        stage2_sum += digit[2];
+        stage2_sum += digit[0];
     }
 
     if (len == '13')
     {
-
+        for (i = 0; i < len; i++)
+        {
+            
+        }
     }
 }
 
