@@ -38,18 +38,23 @@ int checksum_total(int len, string cc_num)
 
     if (len == '16')
     {
+
         for (int i = 0; i < len; i++)
         {
             digit[i] = (cc_num[i] - 48);
         }
-    multiplied[0] = digit[14] * 2
-	multiplied[1] = digit[12] * 2
-	multiplied[2] = digit[10] * 2
-	multiplied[3] = digit[8] * 2
-	multiplied[4] = digit[6] * 2
-	multiplied[5] = digit[4] * 2
-	multiplied[6] = digit[2] * 2
-	multiplied[7] = digit[0] * 2
+
+        // Taking 2nd to last & every other number (stage1 digits) before then multiplying stage1 digits by 2
+        multiplied[0] = digit[14] * 2;
+        multiplied[1] = digit[12] * 2;
+        multiplied[2] = digit[10] * 2;
+        multiplied[3] = digit[8] * 2;
+        multiplied[4] = digit[6] * 2;
+        multiplied[5] = digit[4] * 2;
+        multiplied[6] = digit[2] * 2;
+        multiplied[7] = digit[0] * 2;
+
+        for (int i = 0; i < 8; i++)
     }
 
     if (len == '15')
@@ -62,7 +67,7 @@ int checksum_total(int len, string cc_num)
 
     }
 }
-        // Pull second-to-last from cc_num & every other number starting at second-to-last
+
 
             // Multiply each pulled stage1-digit by 2
 
