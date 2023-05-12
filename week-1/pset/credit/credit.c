@@ -5,6 +5,9 @@ int main(void)
 {
     // Input: Get cc_num from user input
     string cc_num = get_string("Number: ");
+
+    // Get cc_num length
+    int len = strlen(cc_num);
     // Call to Function: checksum_total algorithm
 
     // Calc checksum_last from checksum_total
