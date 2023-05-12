@@ -242,7 +242,7 @@ int first_digit(string cc_num)
 
     if (len == 15)
     {
-        first_digit = cc_num / 
+        first_digit = cc_num / 100000000000000;
     }
 
     if (len == 13)
