@@ -13,11 +13,10 @@ int main(void)
     // Input: Get cc_num from user input
     for (int i = 0; i < strlen(cc_num); i++)
     {
-        do
+        while (isdigit(cc_num[i]) != 0);
         {
             string cc_num = get_string("Number: ");
         }
-        while (isdigit(cc_num[i]) != 0);
     }
 
     // Get cc_num length
