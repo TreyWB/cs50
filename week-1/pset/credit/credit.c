@@ -43,18 +43,18 @@ int main(void)
     // Check cc_num characteristics against issuer criteria
     if (length == 13 || length == 16)
     {
-        if (first_digit(cc_num) == 4)
+        if (first_digit(cc_num) == 4 && valid == true)
         {
             printf("VISA\n");
         }
 
-        if (first_digit(cc_num) >= 51 && first_digit(cc_num) <= 55)
+        if (first_digit(cc_num) >= 51 && first_digit(cc_num) <= 55 && valid == true)
         {
             printf("MASTERCARD\n");
         }
     }
 
-    if (length == 15)
+    if (length == 15 && valid == true)
     {
         do
         {
