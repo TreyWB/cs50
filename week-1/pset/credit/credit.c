@@ -13,15 +13,16 @@ int main(void)
     // Input: Get cc_num from user input
     string cc_num = get_string("Number: ");
 
-    for (int i = 0; i < strlen(cc_num); i++)
-    {
-        do
-        {
-            cc_num = get_string("Number: ");
-        }
-        while (isdigit(cc_num[i]) == 0);
-    }
-    // Get cc_num length
+    // for (int i = 0; i < strlen(cc_num); i++)
+    // {
+    //     do
+    //     {
+    //         cc_num = get_string("Number: ");
+    //     }
+    //     while (isdigit(cc_num[i]) == 0);
+    // }
+
+   // Get cc_num length
     int length = strlen(cc_num);
 
     // Call to Function: checksum_total algorithm
