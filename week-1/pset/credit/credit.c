@@ -40,11 +40,11 @@ int main(void)
         printf("INVALID");
     }
 
-    // Call to Function: first_two_digits
-
-    // Call to Function: first_digit
-
-    // Call to Function: length
+    // Check cc_num characteristics against issuer criteria
+    if (first_digit(cc_num) == 4 && len == 13 || len == 16)
+    {
+        printf("Poggers");
+    }
 
     // Output: While bool valid = true, compare length & first digits to issuer list & print if both conditions match
 
