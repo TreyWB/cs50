@@ -35,18 +35,19 @@ int main(void)
     // Function for checksum_total algorithm: Calculate checksum_total from cc_num
 int checksum_total(string cc_num)
 {
-    int multiplied[];
     int stage1_sum;
     stage1_sum = 0;
     int stage2_sum;
     stage2_sum = 0;
-    int digit[];
 
     // Get cc_num length
     int len = strlen(cc_num);
 
-    if (len == '16')
+    if (len == 16)
     {
+        // Initializations
+        int multiplied[8];
+        int digit[16];
 
         // Move each digit from cc_num into digit array
         for (int i = 0; i < len; i++)
@@ -81,8 +82,11 @@ int checksum_total(string cc_num)
         stage2_sum += digit[1];
     }
 
-    if (len == '15')
+    if (len == 15)
     {
+        // Initializations
+        int multiplied[7];
+        int digit[15];
 
         // Move each digit from cc_num into digit array
         for (int i = 0; i < len; i++)
@@ -100,7 +104,7 @@ int checksum_total(string cc_num)
         multiplied[6] = digit[1] * 2;
 
         // Sum up every multiplied number to get sum of stage1
-        for (i = 0; i < 7; i++)
+        for (int i = 0; i < 7; i++)
         {
             stage1_sum += multiplied[i];
         }
@@ -116,10 +120,14 @@ int checksum_total(string cc_num)
         stage2_sum += digit[0];
     }
 
-    if (len == '13')
+    if (len == 13)
     {
+        // Initializations
+        int multiplied[6];
+        int digit[13];
+
         // Move each digit from cc_num into digit array
-        for (i = 0; i < len; i++)
+        for (int i = 0; i < len; i++)
         {
             digit[i] = (cc_num[i] - 1);
         }
@@ -133,7 +141,7 @@ int checksum_total(string cc_num)
         multiplied[5] = digit[1] * 2;
 
         // Sum up every multiplied number to get sum of stage1
-        for (i = 0; i < 6; i++)
+        for (int i = 0; i < 6; i++)
         {
             stage1_sum += multiplied[i];
         }
