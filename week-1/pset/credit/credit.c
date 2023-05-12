@@ -64,11 +64,14 @@ int main(void)
     }
     else if (length == 15 && valid == true)
     {
-        do
+        if (first_digit(cc_num) == 34 || first_digit(cc_num) == 37)
         {
             printf("AMEX\n");
         }
-        while (first_digit(cc_num) == 34 || first_digit(cc_num) == 37);
+        else
+        {
+            printf("INVALID\n");
+        }
     }
     else if (length > 16 || length < 13 || length == 14)
     {
