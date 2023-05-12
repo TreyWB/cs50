@@ -230,7 +230,23 @@ int checksum_total(string cc_num)
     // Function for first_two_digit: While bool valid = true, get first two digits of cc_num
 int first_digit(string cc_num)
 {
-    
+    // Get cc_num length
+    int len = strlen(cc_num);
+
+    if (len == 16)
+    {
+        
+    }
+
+    if (len == 15)
+    {
+
+    }
+
+    if (len == 13)
+    {
+
+    }
 }
         // Return
 
