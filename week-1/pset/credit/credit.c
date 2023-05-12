@@ -37,7 +37,7 @@ int main(void)
     // Output: Print "INVALID" if bool valid = false
     if (valid == false)
     {
-        printf("INVALID");
+        printf("INVALID\n");
     }
 
     // Check cc_num characteristics against issuer criteria
