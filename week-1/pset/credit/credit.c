@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include <string.h>
 
+int checksum_total(int len, string num);
+
 int main(void)
 {
     // Input: Get cc_num from user input
@@ -30,7 +32,7 @@ int main(void)
 }
 
     // Function for checksum_total algorithm: Calculate checksum_total from cc_num
-int checksum_total(int len, string num)
+int checksum_total(int len, string cc_num)
 {
     int multiplied[];
     int stage1_sum;
@@ -45,7 +47,7 @@ int checksum_total(int len, string num)
         // Move each digit from cc_num into digit array
         for (int i = 0; i < len; i++)
         {
-            digit[i] = (num[i] - 48);
+            digit[i] = (cc_num[i] - 48);
         }
 
         // Taking 2nd to last & every other number before (stage1 digits) then multiplying stage1 digits by 2
@@ -81,7 +83,7 @@ int checksum_total(int len, string num)
         // Move each digit from cc_num into digit array
         for (int i = 0; i < len; i++)
         {
-            digit[i] = (num[i] - 48);
+            digit[i] = (cc_num[i] - 48);
         }
 
         // Taking 2nd to last & every other number before (stage1 digits) then multiplying stage1 digits by 2
@@ -115,7 +117,7 @@ int checksum_total(int len, string num)
         // Move each digit from cc_num into digit array
         for (i = 0; i < len; i++)
         {
-            digit[i] = (num[i] - 1);
+            digit[i] = (cc_num[i] - 1);
         }
 
         // Taking 2nd to last & every other number before (stage1 digits) then multiplying stage1 digits by 2
