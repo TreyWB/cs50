@@ -29,13 +29,12 @@ int main(void)
         int split2;
         split2 = 0;
 
-        do
+        if (multiplied[i] <= 9)
         {
             stage1_sum += multiplied[i];
         }
-        while (multiplied[i] <= 9);
 
-        if (multiplied[i] > 9)
+        else if (multiplied[i] > 9)
         {
             split1 = multiplied[i] / 10;
             split2 = multiplied[i] % 10;
