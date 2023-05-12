@@ -15,7 +15,7 @@ int main(void)
 
     for (int i = 0; i < strlen(cc_num); i++)
     {
-        if (isdigit(cc_num[i]) != 0)
+        if (isdigit(cc_num[i]) == 0)
         {
             cc_num = get_string("Number: ");
         }
