@@ -62,6 +62,7 @@ int main(void)
         while (first_digit(cc_num) == 34 || first_digit(cc_num) == 37);
     }
     else
+
 }
 
     // Function for checksum_total algorithm: Calculate checksum_total from cc_num
