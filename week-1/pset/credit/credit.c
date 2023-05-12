@@ -53,10 +53,17 @@ int main(void)
         {
             printf("MASTERCARD\n");
         }
-        while (first_digit(cc_num) <= 55 && >= 51);
+        while (first_digit(cc_num) <= 55 && first_digit(cc_num) >= 51);
     }
 
-    if ()
+    if (length == 15)
+    {
+        do
+        {
+            printf("AMEX\n");
+        }
+        while (first_digit(cc_num) == 34 || first_digit(cc_num) == 37);
+    }
 
     // Output: While bool valid = true, compare length & first digits to issuer list & print if both conditions match
 
