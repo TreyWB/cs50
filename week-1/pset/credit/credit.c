@@ -5,6 +5,7 @@
 
 int checksum_total(string num);
 int first_digit(string cc_num);
+int first_two_digit(string cc_num);
 
 int main(void)
 {
