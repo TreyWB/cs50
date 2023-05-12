@@ -22,7 +22,14 @@ int main(void)
     bool valid;
 
     checksum_last = checksum_total(cc_num) % 10;
-    
+    if (checksum_last == 0)
+    {
+        valid = true;
+    }
+    else (valid = false);
+
+    printf("Checksum Last: %i\n", checksum_last);
+    printf()
     // Use checksum_last to determine whether cc_num is valid (using bool valid)
 
     // Output: Print "INVALID" if bool valid = false
