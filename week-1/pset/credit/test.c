@@ -19,7 +19,7 @@ int main(void)
     multiplied[1] = 12;
     multiplied[2] = 5;
     int stage1_sum;
-        stage1_sum = 0;
+    stage1_sum = 0;
 
     // Saving each digit in cc_num seperately, into the digit[] array
     for (int i = 0; i < 3; i++)
@@ -29,16 +29,28 @@ int main(void)
         int split2;
         split2 = 0;
 
-        if (multiplied[i] > 9)
+        do
+        {
+            stage1_sum += multiplied[i];
+        }
+        else (multiplied[i] > 9)
         {
             split1 = multiplied[i] / 10;
             split2 = multiplied[i] % 10;
+            stage1_sum += split1;
+            stage1_sum += split2;
         }
-        stage1_sum += multiplied[i];
-        stage1_sum += split1;
-        stage1_sum += split2;
+
         printf("Split 1: %i\n", split1);
         printf("Split 2: %i\n", split2);
         printf("Total: %i\n", stage1_sum);
     }
 }
+        // if (multiplied[i] > 9)
+        // {
+        //     split1 = multiplied[i] / 10;
+        //     split2 = multiplied[i] % 10;
+        // }
+        // stage1_sum += multiplied[i];
+        // stage1_sum += split1;
+        // stage1_sum += split2;
