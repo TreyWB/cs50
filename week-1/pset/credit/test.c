@@ -7,7 +7,8 @@ int main(void)
     string cc_num = get_string("Number: ");
     // printf("Output: %s\n", cc_num);
 
-    int sum_every_other_digit = every_other_digit(cc_num);
+    int sum_every_other_digit;
+    sum_every_other_digit = every_other_digit(cc_num);
 }
 
 int every_other_digit(string cc_num)
