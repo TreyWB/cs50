@@ -17,13 +17,18 @@ int every_other_digit(string cc_num)
     long digit;
     digit = cc_num;
 
-    int sum = 0;
+    int sum1 = 0;
     bool isAlternateDigit = false;
     while (cc_num > 0)
     {
         if (isAlternateDigit == true)
         {
-            int last_digit =
+            int last_digit = cc_num % 10;
+            sum1 += last_digit;
         }
+        isAlternateDigit = !isAlternateDigit
+        cc_num = cc_num / 10;
+
     }
+    return sum1;
 }
