@@ -9,7 +9,11 @@ int main(void)
     long cc_num = get_long("Number: ");
     // printf("Output: %s\n", cc_num);
 
+    printf("Original: %li\n", cc_num);
+
     int sum_every_other_digit = every_other_digit(cc_num);
+
+    printf("Post: %li\n", cc_num);
 }
 
 int every_other_digit(long cc_num)
@@ -25,6 +29,7 @@ int every_other_digit(long cc_num)
         }
         isAlternateDigit = !isAlternateDigit;
         cc_num = cc_num / 10;
+        printf("Changed to: %li\n", cc_num);
 
     }
     return sum1;
