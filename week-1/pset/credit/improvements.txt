@@ -1,0 +1,5 @@
+Improvements for Credit.c
+
+1. Change method by which we get 2nd to last digit & every other digit before
+    - Use while (cc_num > 0) loop
+    - 
