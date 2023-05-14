@@ -1,5 +1,6 @@
 Improvements for Credit.c
 
 1. Change method by which we get 2nd to last digit & every other digit before
-    - Use while (cc_num > 0) loop
-    - 
+    - Use while (cc_num > 0) loop w/ bool isAlternateDigit
+    - Make sure new method works for all inputs (16 digit, 15 digit, and 13 digit cc_nums)
+    - Combine steps: Every other digit function & multiplications for stage1_sum function
