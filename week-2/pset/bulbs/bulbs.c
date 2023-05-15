@@ -12,7 +12,7 @@ int main(void)
     int len = strlen(message);
 
     // Initialize product array
-    int bit[6];
+    int bit[BITS_IN_BYTE];
     // int remainer;
 
     // META LOOP: Iterate over each character in string
