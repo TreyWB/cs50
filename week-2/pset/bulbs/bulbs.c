@@ -5,6 +5,7 @@
 const int BITS_IN_BYTE = 8;
 
 void print_bulb(int bit);
+long binary_convert(int ASCII);
 
 int main(void)
 {
@@ -18,7 +19,10 @@ int main(void)
     }
 }
 
- binary_convert(int ASCII)
+long binary_convert(int ASCII)
+{
+    return 0;
+}
 
 void print_bulb(int bit)
 {
