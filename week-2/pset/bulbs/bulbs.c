@@ -17,6 +17,8 @@ int main(void)
 
     for (int i = 0; i < len; i++)
     {
+        int input = message[i];
+        
         // Convert each character in message
         while (input > 0)
         {
