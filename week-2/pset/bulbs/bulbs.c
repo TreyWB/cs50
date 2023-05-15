@@ -15,11 +15,12 @@ int main(void)
     int bit[6];
     int remainer;
 
+    // META LOOP: Iterate over each character in string
     for (int i = 0; i < len; i++)
     {
         int input = message[i];
-        
-        // Convert each character in message
+
+        // ASCII to Binary Loop
         while (input > 0)
         {
             for (int i = 0; i < len; i++)
