@@ -26,7 +26,7 @@ int main(void)
                 product[0] = 0;
             }
 
-            input / 2;
+            input = input / 2;
         }
 
     }
