@@ -19,11 +19,11 @@ int main(void)
 
             if (remainder[i] != 0)
             {
-                product[0] = 1;
+                product[i] = 1;
             }
             else
             {
-                product[0] = 0;
+                product[i] = 0;
             }
 
             input = input / 2;
@@ -31,4 +31,6 @@ int main(void)
 
     }
 
+
+    printf("Done\n");
 }
