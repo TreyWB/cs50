@@ -5,6 +5,7 @@
 #include <cs50.h>
 #include <stdio.h>
 #include <ctype.h>
+#include <string.h>
 
 bool valid(string password);
 
@@ -24,5 +25,12 @@ int main(void)
 // TODO: Complete the Boolean function below
 bool valid(string password)
 {
+    int len = strlen(password);
+
+    for (int i = 0; i < len; i++)
+    {
+        
+    }
+
     return false;
 }
