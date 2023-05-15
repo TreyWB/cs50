@@ -9,7 +9,16 @@ void print_bulb(int bit);
 int main(void)
 {
     string message = get_string("Message: \n");
+    int len = strlen(message);
+
+    for (int i = 0; i < len; i++)
+    {
+        // Send each character in message to binary converter
+        int ASCII = binary_convert(message[i]);
+    }
 }
+
+ binary_convert(int ASCII)
 
 void print_bulb(int bit)
 {
