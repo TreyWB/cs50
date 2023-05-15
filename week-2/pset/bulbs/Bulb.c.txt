@@ -1,0 +1,17 @@
+Bulbs.c Pseudocode
+
+Objectives:
+- Convert characters in user input to ASCII decimals
+- Converting ASCII decimals to binary (using base-2)
+- Turn bulbs on & off (implemented in print_bulb function)
+
+Implementation:
+1. Get user input
+2. Iterate through each character in user input string
+3. Get ASCII value of character by passing it as an int
+4. Convert to base-2
+	- If ASCII value is two or three digit, split it
+	- First divide ASCII by 2; if no remainder then far-right bit = 0
+	- Then divide by 2 again and again again until ASCII number is 0
+	- Store each product in int array
+5. Iterate over each bit, and send to print_bulb function	
