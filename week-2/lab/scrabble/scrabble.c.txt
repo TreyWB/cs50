@@ -1,0 +1,12 @@
+Scrabble.c Pseudocode
+
+Overview:
+- User input of 2 words
+- Compute score for each letter of the strings
+- Sum up score for each word
+- Compare scores, highest score wins, if scores are equal print TIE
+
+------------------
+- POINTS for each letter are stored in an int array
+- Use compute_score function to get score for entire string
+- Characters in the string that are not letters should recieve no points
