@@ -18,6 +18,7 @@ int main(void)
     // META LOOP: Iterate over each character in string
     for (int i = 0; i < len; i++)
     {
+        // Translate character to ASCII
         int input = message[i];
 
         // ASCII to Binary Loop
