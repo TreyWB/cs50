@@ -39,7 +39,12 @@ bool valid(string password)
         password[i]
     }
 
-    
-
-    return false;
+    if (uppercase == true && lowercase == true && number == true && symbol == true)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
 }
