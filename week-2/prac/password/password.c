@@ -28,18 +28,55 @@ bool valid(string password)
     int len = strlen(password);
 
     // Bools for Criteria check
-    bool uppercase = false;
     bool lowercase = false;
+    bool uppercase = false;
     bool number = false;
     bool symbol = false;
 
     for (int i = 0; i < len; i++)
     {
         // Check for lowercase
-        password[i]
+        if (lowercase == false)
+        {
+            int lower = islower(password[i]);
+            if (lower != 0)
+            {
+                lowercase = true;
+            }
+        }
+
+        // Check for uppercase
+        if (uppercase == false)
+        {
+            int upper = isupper(password[i]);
+            if (upper != 0)
+            {
+                uppercase = true;
+            }
+        }
+
+        // Check for number
+        if (number == false)
+        {
+            int num = isdigit(password[i]);
+            if (num != 0)
+            {
+                number = true;
+            }
+        }
+
+        // Check for symbol
+        if (symbol == false)
+        {
+            int sym = islower(password[i]);
+            if (sym != 0)
+            {
+                symbol = true;
+            }
+        }
     }
 
-    if (uppercase == true && lowercase == true && number == true && symbol == true)
+    if (lowercase == true && uppercase == true && number == true && symbol == true)
     {
         return true;
     }
