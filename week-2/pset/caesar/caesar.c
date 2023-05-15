@@ -7,7 +7,7 @@ int main(int argc, string argv[])
 {
     int len = strlen(argv[1]);
 
-    if (isdigit() = 0)
+    if (argc != 2)
     {
         printf("Usage: ./caesar key\n");
     }
