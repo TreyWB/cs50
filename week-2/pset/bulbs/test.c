@@ -7,7 +7,7 @@ int main(void)
     int input = get_int("Decimal: ");
 
     // Initialize product array
-    int product[6];
+    int bit[6];
 
     int remainder;
 
@@ -19,11 +19,11 @@ int main(void)
 
             if (remainder != 0)
             {
-                product[i] = 1;
+                bit[i] = 1;
             }
             else
             {
-                product[i] = 0;
+                bit[i] = 0;
             }
 
             input = input / 2;
@@ -32,7 +32,7 @@ int main(void)
 
         for (int i = 6; i > 0; i--)
         {
-            
+
         }
     }
 
