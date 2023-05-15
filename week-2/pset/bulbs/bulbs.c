@@ -41,7 +41,7 @@ int main(void)
                 input = input / 2;
             }
 
-            for (int k = BITS_IN_BYTE; k >= 0; k--)
+            for (int k = BITS_IN_BYTE - 1; k >= 0; k--)
             {
                 print_bulb(bit[k]);
             }
