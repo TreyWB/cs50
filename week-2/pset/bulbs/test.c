@@ -9,15 +9,15 @@ int main(void)
     // Initialize product array
     int product[6];
 
-    int remainder[6];
+    int remainder;
 
     while (input > 0)
     {
         for (int i = 0; i < 6; i++)
         {
-            remainder[i] = input % 2;
+            remainder = input % 2;
 
-            if (remainder[i] != 0)
+            if (remainder != 0)
             {
                 product[i] = 1;
             }
