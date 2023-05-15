@@ -68,7 +68,7 @@ bool valid(string password)
         // Check for symbol
         if (symbol == false)
         {
-            int sym = islower(password[i]);
+            int sym = ispunct(password[i]);
             if (sym != 0)
             {
                 symbol = true;
