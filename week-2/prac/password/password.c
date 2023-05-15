@@ -35,7 +35,8 @@ bool valid(string password)
 
     for (int i = 0; i < len; i++)
     {
-        
+        // Check for lowercase
+        password[i]
     }
 
     return false;
