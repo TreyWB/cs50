@@ -15,11 +15,11 @@ int main(void)
     for (int i = 0; i < len; i++)
     {
         // Send each character in message to binary converter
-        int ASCII = binary_convert(message[i]);
+        long binary = binary_convert(message[i]);
     }
 }
 
-long binary_convert(int ASCII)
+long binary_convert(int binary)
 {
     return 0;
 }
