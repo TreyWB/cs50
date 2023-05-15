@@ -31,8 +31,8 @@ int main(void)
     {
         printf("Tie!\n");
     }
-    printf("Player 1 Score: %i\n", score1);
-    printf("Player 2 Score: %i\n", score2);
+//     printf("Player 1 Score: %i\n", score1);
+//     printf("Player 2 Score: %i\n", score2);
 }
 
 int compute_score(string word)
