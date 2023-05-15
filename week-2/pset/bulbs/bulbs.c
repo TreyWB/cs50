@@ -23,25 +23,25 @@ int main(void)
         // ASCII to Binary Loop
         while (input > 0)
         {
-            for (int i = 0; i < len; i++)
+            for (int j = 0; j < len; j++)
             {
                 remainder = input % 2;
 
                 if (remainder != 0)
                 {
-                    bit[i] = 1;
+                    bit[j] = 1;
                 }
                 else
                 {
-                    bit[i] = 0;
+                    bit[j] = 0;
                 }
 
                 input = input / 2;
             }
 
-            for (int i = BITS_IN_BYTE; i > 0; i--)
+            for (int k = BITS_IN_BYTE; k > 0; k--)
             {
-                print_bulb(bit[i]);
+                print_bulb(bit[k]);
             }
 
         }
