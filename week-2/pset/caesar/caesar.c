@@ -3,5 +3,7 @@
 
 int main(int argc, string argv[])
 {
+    if (argv[1] )
+
     printf("plaintext: %s\n", argv[1]);
 }
