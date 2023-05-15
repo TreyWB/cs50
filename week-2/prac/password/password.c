@@ -27,6 +27,12 @@ bool valid(string password)
 {
     int len = strlen(password);
 
+    // Bools for Criteria check
+    bool uppercase = false;
+    bool lowercase = false;
+    bool number = false;
+    bool symbol = false;
+
     for (int i = 0; i < len; i++)
     {
         
