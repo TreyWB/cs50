@@ -13,19 +13,18 @@ int main(void)
     {
         for (int i = 0; i < 6; i++)
         {
-            
-        }
-        // Math to convert to binary
-        int remainder1 = input % 2;
+            int remainder1 = input % 2;
 
-        if (remainder1 != 0)
-        {
-            product[0] = 1;
+            if (remainder1 != 0)
+            {
+                product[0] = 1;
+            }
+            else
+            {
+                product[0] = 0;
+            }
         }
-        else
-        {
-            product[0] = 0;
-        }
+
     }
 
 }
