@@ -29,6 +29,11 @@ int main(void)
             input = input / 2;
         }
 
+
+        for (int i = 6; i > 0; i++)
+        {
+            
+        }
     }
 
 
