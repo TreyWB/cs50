@@ -24,7 +24,7 @@ int main(void)
         // ASCII to Binary Loop
         while (input > 0)
         {
-            for (int j = 0; j < len; j++)
+            for (int j = 0; j < BITS_IN_BYTE; j++)
             {
                 int remainder;
                 remainder = input % 2;
