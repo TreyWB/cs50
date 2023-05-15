@@ -13,7 +13,7 @@ int main(void)
 
     // Initialize product array
     int bit[6];
-    int remainer;
+    // int remainer;
 
     // META LOOP: Iterate over each character in string
     for (int i = 0; i < len; i++)
@@ -25,6 +25,7 @@ int main(void)
         {
             for (int j = 0; j < len; j++)
             {
+                int remainder;
                 remainder = input % 2;
 
                 if (remainder != 0)
@@ -39,11 +40,12 @@ int main(void)
                 input = input / 2;
             }
 
-            for (int k = BITS_IN_BYTE; k > 0; k--)
+            for (int k = BITS_IN_BYTE; k >= 0; k--)
             {
                 print_bulb(bit[k]);
             }
 
+            printf("\n");
         }
     }
 }
