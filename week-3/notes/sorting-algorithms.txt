@@ -1,6 +1,5 @@
 Sorting Algorithms
 ---------------------
-
 SELECTION SORT
 Pseudocode:
     for i from 0 to n-1
@@ -10,3 +9,11 @@ Efficiency:
 n + (n-1) + (n-2) + ... + 1
 // simplified
 O(n^2)
+
+--------------------------------------
+BUBBLE SORT
+Pseudocode:
+    Repeat n-1 times
+        For i from 0 to n-2
+        If numbers[i] and numbers[i+1] out of order
+            Swap them
