@@ -1,2 +1,11 @@
 Data Structures
 
+Defining Data Strucutre Syntax:
+    // Typedef = Define new (custom) datatype
+    // Struct = 
+    typedef struct
+    {
+        string name;
+        string number;
+    }
+    person;
