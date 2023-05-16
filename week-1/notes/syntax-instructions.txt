@@ -113,7 +113,7 @@ Pass int variable as float:
 ---------------------------------------
 ARRAYS
 
-Declaring basic array:
+Declaring int array:
     int scores[3];
 
 Settings variables for array:
@@ -122,6 +122,26 @@ Settings variables for array:
     scores[1] = 73;
     scores[2] = 33;
 
+String Arrays
+
+Declaring string array:
+    string names[3];
+
+Declaring string array and setting values:
+    string names[] = {"Bill", "Charles", "Fred"};
+
+Linear Search through String Array
+    string names[] = {"Bill", "Charles", "Fred"};
+    for (int i = 0; i < 3; i++)
+    {
+        if (strcmp(names[i], "Fred") == 0)
+        {
+            printf("Found\n");
+            return 0;
+        }
+    }
+    printf("Not Found\n");
+    return 1;
 ------------------------------------------
 TYPE CASTING
 
