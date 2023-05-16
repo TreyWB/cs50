@@ -17,3 +17,9 @@ Pseudocode:
             Quit
 
 ---------------------------------------
+MERGE SORT (recursive sort)
+Pseudocode:
+    // This function calls itself
+    Sort left half of numbers
+    Sort right half of numbers
+    Merge sorted halves
