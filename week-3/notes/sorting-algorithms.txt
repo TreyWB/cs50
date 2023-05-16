@@ -18,6 +18,8 @@ Pseudocode:
 
 ---------------------------------------
 MERGE SORT (recursive sort)
+- Requires an additional, empty array
+- Uses more memory, but solves problem in less steps (quicker, more efficient)
 Pseudocode:
     // Base case; required in any use of recursion so it doesn't loop infinitely
     If only one number
