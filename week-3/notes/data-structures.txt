@@ -10,3 +10,24 @@ Defining Data Type Syntax:
     }
     person;
     // Name of new datatype
+
+----------------------------------------------------
+Implementing Array with New Data Type:
+
+    typedef struct
+        {
+            string name;
+            string number;
+        }
+        person;
+
+    int main(void)
+    {
+        // Define array with custom data type "person"
+        person people[2];
+
+        // Assigns name string in people[] to Carter
+        // The '.' accesses the 'name' variable in people[]
+        people[0].name = "Carter"
+        people[0].number = "+1-617-495-1000"
+    }
