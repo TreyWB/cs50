@@ -19,7 +19,11 @@ Pseudocode:
 ---------------------------------------
 MERGE SORT (recursive sort)
 Pseudocode:
+    // Base case; required in any use of recursion so it doesn't loop infinitely
+    If only one number
+        Quit
     // This function calls itself
+    // Each line sorts a smaller problem
     Sort left half of numbers
     Sort right half of numbers
     Merge sorted halves
